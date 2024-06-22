@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Game - menu</title>
+</head>
+
+<body id="menu">
+
+    <div class="container__menu">
+        <div class="container__conteudo">
+            <div class="container__informacoes">
+                <div class="container__texto">
+                    <h1>Jogo do <span class="container__texto-azul">numero secreto</span></h1>
+                    <p class="texto__paragrafo">Digite o nivel de dificuldade [1, 2, 3]</p>
+                </div>
+                <input type="number" min="1" max="3" class="container__input__dificuldade">
+                <div class="chute container__botoes">
+                    <button onclick="verificarDificuldade()" class="container__botao">CHECAR</button>
+                    <a href="index.html" class="container__botao"><button onclick="iniciarjogo()" id="iniciar" class="container__botao" disabled>INICIAR</button></a>
+                </div>
+            </div>
+            <img src="./img/oikawa.png" alt="Uma pessoa olhando para a esquerda" id="img_menu" class="container__imagem-pessoa" />
+        </div>
+    </div>
+
+
+
+
+    <script src="menu.js" defer></script>
+</body>
+
+</html>
